@@ -1,0 +1,50 @@
+[
+  {
+    "file": "01_Kabbedijk_2015_Defining_multi_tenancy.pdf",
+    "url": "https://asgaard.ece.ualberta.ca/papers/Journal/JSS_2015_Kabbedijk_Defining_Multi-Tenancy_A_Systematic_Mapping_Study_on_the_Academic_and_the_Industrial_Perspective.pdf",
+    "bytes": 425632,
+    "pages": 28,
+    "status": "ok",
+    "note": "Bản thảo tác giả."
+  },
+  {
+    "file": "02_Sandholm_2014_Notes_on_Cloud_computing_principles.pdf",
+    "url": "https://arxiv.org/pdf/1504.07325",
+    "bytes": 354309,
+    "pages": 19,
+    "status": "ok",
+    "note": "Bản lưu trên arXiv năm 2015 của bài được trích dẫn năm 2014."
+  },
+  {
+    "file": "03_Papazoglou_2007_Service_oriented_architectures.pdf",
+    "url": "https://link.springer.com/content/pdf/10.1007/s00778-007-0044-3.pdf?download=1",
+    "bytes": 818676,
+    "pages": 27,
+    "status": "ok",
+    "note": "Bản xuất bản, 27 trang."
+  },
+  {
+    "file": "04_Dragoni_2017_Microservices_How_To_Make_Your_Application_Scale.pdf",
+    "url": "https://arxiv.org/pdf/1702.07149",
+    "bytes": 569132,
+    "pages": 10,
+    "status": "ok",
+    "note": "Bản arXiv được sử dụng trong báo cáo."
+  },
+  {
+    "file": "05_Popek_Goldberg_1974_Formal_requirements.pdf",
+    "url": "https://www.cs.columbia.edu/~cdall/candidacy/pdf/Popek.pdf",
+    "bytes": 2060968,
+    "pages": 10,
+    "status": "ok",
+    "note": "Bản quét bài gốc."
+  },
+  {
+    "file": "06_Felter_2015_VM_and_Linux_containers.pdf",
+    "url": "https://people.computing.clemson.edu/~jmarty/projects/lowLatencyNetworking/papers/TGIF-middleware/AnupdatedPerfAnalysisofContainersandVMs.pdf",
+    "bytes": 110772,
+    "pages": 2,
+    "status": "ok",
+    "note": "Bản bài báo lưu tại Clemson University."
+  }
+]

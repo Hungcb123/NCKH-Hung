@@ -46,5 +46,13 @@
     "pages": 2,
     "status": "ok",
     "note": "Bản bài báo lưu tại Clemson University."
+  },
+  {
+    "file": "07_Bezemer_Zaidman_2010_Multi_Tenant_SaaS_Applications.pdf",
+    "url": "https://azaidman.github.io/publications/bezemerIWPSE2010.pdf",
+    "bytes": 155804,
+    "pages": 5,
+    "status": "ok",
+    "note": "Bản tác giả toàn văn; position paper."
   }
 ]

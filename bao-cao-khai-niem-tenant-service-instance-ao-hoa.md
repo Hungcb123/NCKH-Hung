@@ -180,6 +180,29 @@ Có hai cách sử dụng cần phân biệt:
 
 Trong ví dụ, dùng chung ứng dụng không có nghĩa hai trường được phép đọc dữ liệu của nhau. Ngược lại, chỉ có trường dữ liệu `tenant_id` chưa chứng minh hệ thống đã cách ly đúng; kiến trúc và kiểm tra truy cập phải thực thi được phạm vi tenant.
 
+### 7.5. Single-tenant — Đơn thuê bao
+
+**Định nghĩa đề xuất:** Single-tenant là đặc tính của một môi trường triển khai hoặc một đơn vị tài nguyên được dành riêng để phục vụ một tenant, tại tầng và trong phạm vi đang xét. Tenant đó có thể có nhiều người dùng và được phục vụ bởi một hoặc nhiều instance.
+
+Cần phân biệt việc một hệ thống hiện chỉ có một khách hàng với mô hình dành riêng môi trường cho khách hàng đó. Một nền tảng được thiết kế để chia sẻ giữa nhiều tenant vẫn có thể mới tiếp nhận một tenant; số tenant quan sát được ở thời điểm đó chưa đủ để kết luận kiến trúc là single-tenant.
+
+**Căn cứ khoa học:** Bezemer và Zaidman [7], mục 2.3.2, mô tả môi trường single-tenant trong đó mỗi tenant có instance ứng dụng riêng, có thể được tùy chỉnh. Mục 2.3.3 cũng thảo luận ứng dụng single-tenant có nhiều instance đang chạy. Định nghĩa ở đây là cách tổng hợp có nêu phạm vi, không phải câu trích nguyên văn. [Bản tác giả, trang 2](https://azaidman.github.io/publications/bezemerIWPSE2010.pdf).
+
+**Ví dụ do báo cáo xây dựng:** Trường A được cấp riêng một môi trường quản lý điểm với ba instance để phân phối tải. Cả ba instance chỉ phục vụ Trường A, nơi có 200 giáo viên sử dụng. Môi trường này là single-tenant ở tầng ứng dụng, đồng thời multi-user và multi-instance.
+
+**Đối chiếu với multi-tenant:**
+
+| Tiêu chí | Single-tenant | Multi-tenant |
+|---|---|---|
+| Phân bổ ở tầng đang xét | Môi trường hoặc tài nguyên được dành riêng cho một tenant | Tài nguyên được chia sẻ giữa nhiều tenant |
+| Số người dùng trong mỗi tenant | Có thể một hoặc nhiều | Có thể một hoặc nhiều |
+| Số instance phục vụ | Có thể một hoặc nhiều | Có thể một hoặc nhiều |
+| Ví dụ ở tầng ứng dụng | Tập instance dành riêng cho Trường A | Tập instance dùng chung giữa Trường A và Trường B, có cơ chế quản lý và cách ly theo tenant |
+| Quan hệ với hạ tầng | Ứng dụng dành riêng vẫn có thể chạy trên hạ tầng chia sẻ | Cần nêu rõ tầng tài nguyên được chia sẻ |
+
+Bảng là tổng hợp theo định nghĩa làm việc của báo cáo. Không suy ra rằng single-tenant phải có máy chủ vật lý riêng, chỉ có một người dùng hoặc chỉ có một instance. Cũng không suy ra single-tenant tự động bảo đảm an toàn hay hiệu năng; các thuộc tính đó phụ thuộc cơ chế triển khai cụ thể.
+
+Ví dụ, instance A chỉ phục vụ Trường A và instance B chỉ phục vụ Trường B, nhưng cả hai chạy trên cùng một máy chủ: mỗi instance là single-tenant ở tầng ứng dụng, còn hạ tầng chia sẻ cần được phân tích riêng. Vì vậy, kết luận nên viết đầy đủ “single-tenant ở tầng ứng dụng” thay vì mặc định mọi tầng đều được dành riêng.
 ## 8. So sánh multi-user, multi-instance và multi-tenant
 
 ### 8.1. Bảng so sánh khái niệm
@@ -260,4 +283,5 @@ Các định nghĩa trong báo cáo này nên được giới thiệu là **đ�
 
 
 [7] Bezemer, C.-P., & Zaidman, A. (2010). Multi-Tenant SaaS Applications: Maintenance Dream or Nightmare? *Proceedings of the Joint ERCIM Workshop on Software Evolution and International Workshop on Principles of Software Evolution (IWPSE-EVOL ’10)*. Position paper. [Bản tác giả toàn văn](https://azaidman.github.io/publications/bezemerIWPSE2010.pdf).
+
 

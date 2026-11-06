@@ -1,0 +1,4 @@
+.diagram-tools/
+diagrams/_build/
+diagrams/_archive/
+diagrams/scripts/__pycache__/

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio" version="32.6.10">
+  <diagram id="hinh_2_2_pool" name="pool">
+    <mxGraphModel grid="1" gridSize="10" page="0" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1100" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Tenant A" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="20" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Tenant B" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="420" y="20" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Tenant C" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="790" y="20" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Một App instance chung&#10;TenantContext + nghiệp vụ + metadata" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="230" y="210" width="640" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Một database, các bảng chung&#10;Hàng A: tenant_id=A | Hàng B: tenant_id=B | Hàng C: tenant_id=C" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;shape=cylinder3;size=15;boundedLbl=1;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="170" y="430" width="760" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.25;entryY=0;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.75;entryY=0;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

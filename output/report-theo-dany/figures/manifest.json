@@ -1,0 +1,138 @@
+[
+  {
+    "stem": "hinh_1_1_tien_trinh",
+    "caption": "Hình 1.1 Các hướng phát triển của mô hình chia sẻ tài nguyên",
+    "section": "1.1.2",
+    "meaning": "Các mô hình có thể cùng tồn tại; mũi tên biểu diễn sự kế thừa ý tưởng.",
+    "width": 1100,
+    "height": 430
+  },
+  {
+    "stem": "hinh_1_2_tco",
+    "caption": "Hình 1.2 Chi phí sở hữu của nhà cung cấp theo số tenant",
+    "section": "1.1.4",
+    "meaning": "Trục hoành là số tổ chức; trục tung là tổng chi phí trong cùng kỳ; điểm giao là cân bằng chi phí hai phương án.",
+    "width": 1100,
+    "height": 720
+  },
+  {
+    "stem": "hinh_1_3_st_mi_mu_mt",
+    "caption": "Hình 1.3 Phân biệt đơn vị tổ chức của ST MI MU và MT",
+    "section": "1.3.5",
+    "meaning": "MI mô tả số bản chạy, MU mô tả nhiều cá nhân; ST và MT mô tả phạm vi phục vụ thuê bao.",
+    "width": 1100,
+    "height": 850
+  },
+  {
+    "stem": "hinh_1_4_truong_thanh",
+    "caption": "Hình 1.4 Tổ chức mã nguồn ứng dụng và dữ liệu qua bốn cấp độ trưởng thành",
+    "section": "1.4.6",
+    "meaning": "Phương án database và cấu hình được diễn giải theo phạm vi đối chiếu của đề tài; mở rộng ngang là hướng phát triển.",
+    "width": 1100,
+    "height": 1020
+  },
+  {
+    "stem": "hinh_1_5_ba_tang",
+    "caption": "Hình 1.5 Quan hệ ba tầng trong cung ứng dịch vụ đa thuê bao",
+    "section": "1.5.3",
+    "meaning": "Các tầng diễn tả vai trò cung ứng; không đồng nhất với ba lớp giao diện nghiệp vụ truy cập dữ liệu.",
+    "width": 1100,
+    "height": 660
+  },
+  {
+    "stem": "hinh_1_6_tich_hop",
+    "caption": "Hình 1.6 Mô hình tổng thể và các cơ chế kiểm soát xuyên tầng",
+    "section": "1.5.5",
+    "meaning": "Đường liền là quan hệ phục vụ, nét đứt là phạm vi kiểm soát, không phải luồng request.",
+    "width": 1100,
+    "height": 750
+  },
+  {
+    "stem": "hinh_2_1_silo",
+    "caption": "Hình 2.1 Tài nguyên ứng dụng và dữ liệu dành riêng theo tenant",
+    "section": "2.2.1",
+    "meaning": "Quan hệ mũi tên xác định App và dữ liệu phục vụ tenant; tên mô hình không tự bảo đảm mức cô lập vật lý.",
+    "width": 1100,
+    "height": 600
+  },
+  {
+    "stem": "hinh_2_2_pool",
+    "caption": "Hình 2.2 Ứng dụng và bảng dữ liệu dùng chung có nhận biết tenant",
+    "section": "2.2.2",
+    "meaning": "Quan hệ mũi tên xác định App và dữ liệu phục vụ tenant; tên mô hình không tự bảo đảm mức cô lập vật lý.",
+    "width": 1100,
+    "height": 600
+  },
+  {
+    "stem": "hinh_2_3_bridge",
+    "caption": "Hình 2.3 Chia sẻ ứng dụng và phân tách nguồn dữ liệu",
+    "section": "2.2.3",
+    "meaning": "Quan hệ mũi tên xác định App và dữ liệu phục vụ tenant; tên mô hình không tự bảo đảm mức cô lập vật lý.",
+    "width": 1100,
+    "height": 600
+  },
+  {
+    "stem": "hinh_2_4_hybrid",
+    "caption": "Hình 2.4 Phối hợp tài nguyên dùng chung và dành riêng",
+    "section": "2.2.4",
+    "meaning": "Quan hệ mũi tên xác định App và dữ liệu phục vụ tenant; tên mô hình không tự bảo đảm mức cô lập vật lý.",
+    "width": 1100,
+    "height": 600
+  },
+  {
+    "stem": "hinh_3_1_use_case",
+    "caption": "Hình 3.1 Nhóm ca sử dụng theo vai trò của ứng dụng",
+    "section": "3.1.2",
+    "meaning": "Đường nối là quan hệ tham gia chức năng; quyền chi tiết được xác định trong ma trận phân quyền.",
+    "width": 1100,
+    "height": 740
+  },
+  {
+    "stem": "hinh_3_2_kien_truc",
+    "caption": "Hình 3.2 Kiến trúc thành phần của ứng dụng được đề xuất",
+    "section": "3.2.2",
+    "meaning": "Các khối trong backend là mô-đun cùng một instance; sơ đồ không biểu diễn nhiều dịch vụ triển khai độc lập.",
+    "width": 1100,
+    "height": 800
+  },
+  {
+    "stem": "hinh_3_3_luong_yeu_cau",
+    "caption": "Hình 3.3 Luồng tạo thẻ có xác lập và giải phóng ngữ cảnh tenant",
+    "section": "3.2.3",
+    "meaning": "Luồng hợp lệ; lỗi xác thực bị từ chối trước nghiệp vụ; mọi nhánh đều dọn ngữ cảnh.",
+    "width": 1100,
+    "height": 850
+  },
+  {
+    "stem": "hinh_3_4_erd",
+    "caption": "Hình 3.4 Lược đồ logic các thực thể dữ liệu cốt lõi",
+    "section": "3.3.1",
+    "meaning": "Một workspace tương ứng một tenant; FK nghiệp vụ có cùng tenant_id; ký hiệu 1:N biểu diễn lực lượng quan hệ.",
+    "width": 1100,
+    "height": 1060
+  },
+  {
+    "stem": "hinh_3_5_metadata",
+    "caption": "Hình 3.5 Cập nhật và áp dụng metadata theo tenant khi ứng dụng đang chạy",
+    "section": "3.4.3",
+    "meaning": "Thay đổi cấu hình không thay thế phân quyền; backend vẫn kiểm tra quy tắc khi gọi API trực tiếp.",
+    "width": 1100,
+    "height": 680
+  },
+  {
+    "stem": "hinh_3_6_giao_dien",
+    "caption": "Hình 3.6 Thiết kế giao diện quản lý công việc theo workspace",
+    "section": "3.5.3",
+    "meaning": "Wireframe đề xuất; không được dùng như bằng chứng ứng dụng đã chạy hoặc đã vượt kiểm thử.",
+    "width": 1100,
+    "height": 690
+  },
+  {
+    "stem": "hinh_3_7_trien_khai",
+    "caption": "Hình 3.7 Mô hình triển khai ứng dụng phục vụ nhiều tenant trên máy chủ thử nghiệm",
+    "section": "3.6.1",
+    "meaning": "Chỉ backend được tính là instance ứng dụng nghiệp vụ; database không công khai trực tiếp ra Internet.",
+    "width": 1100,
+    "height": 760
+  }
+]

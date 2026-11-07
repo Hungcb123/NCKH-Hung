@@ -1,0 +1,9 @@
+{
+  "pages": 27,
+  "figures": 2,
+  "tables": 7,
+  "comments": 5,
+  "tco_axis_label": "Chi phí sở hữu (TCO)",
+  "visual_qa": "All final pages reviewed; unchanged pages verified by hash",
+  "empirical_results": "Not supplied; section 2.8 defines expected checks without claiming measured results"
+}

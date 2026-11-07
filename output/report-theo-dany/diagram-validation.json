@@ -1,0 +1,87 @@
+[
+  {
+    "file": "hinh_1_1_tien_trinh.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '10' overlap\n0 error(s), 5 warning(s)\n"
+  },
+  {
+    "file": "hinh_1_2_tco.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '10' overlap\nwarning: vertices '2' and '11' overlap\nwarning: vertices '2' and '12' overlap\nwarning: vertices '2' and '13' overlap\nwarning: vertices '2' and '14' overlap\nwarning: vertices '2' and '15' overlap\nwarning: vertices '2' and '16' overlap\nwarning: vertices '2' and '17' overlap\n0 error(s), 10 warning(s)\n"
+  },
+  {
+    "file": "hinh_1_3_st_mi_mu_mt.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '9' overlap\nwarning: vertices '2' and '10' overlap\nwarning: vertices '2' and '11' overlap\nwarning: vertices '2' and '12' overlap\nwarning: vertices '2' and '15' overlap\nwarning: vertices '2' and '16' overlap\nwarning: vertices '2' and '17' overlap\nwarning: vertices '2' and '18' overlap\nwarning: vertices '2' and '20' overlap\nwarning: vertices '2' and '21' overlap\nwarning: vertices '2' and '22' overlap\nwarning: vertices '2' and '23' overlap\nwarning: vertices '2' and '24' overlap\nwarning: vertices '3' and '4' overlap\nwarning: vertices '3' and '5' overlap\nwarning: vertices '3' and '6' overlap\nwarning: vertices '9' and '10' overlap\nwarning: vertices '9' and '11' overlap\nwarning: vertices '9' and '12' overlap\nwarning: vertices '9' and '15' overlap\nwarning: vertices '16' and '17' overlap\nwarning: vertices '16' and '18' overlap\nwarning: vertices '16' and '20' overlap\nwarning: vertices '21' and '22' overlap\nwarning: vertices '21' and '23' overlap\nwarning: vertices '21' and '24' overlap\n0 error(s), 30 warning(s)\n"
+  },
+  {
+    "file": "hinh_1_4_truong_thanh.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '7' overlap\nwarning: vertices '2' and '8' overlap\nwarning: vertices '2' and '9' overlap\nwarning: vertices '2' and '10' overlap\nwarning: vertices '2' and '11' overlap\nwarning: vertices '2' and '12' overlap\nwarning: vertices '2' and '13' overlap\nwarning: vertices '2' and '14' overlap\n0 error(s), 12 warning(s)\n"
+  },
+  {
+    "file": "hinh_1_5_ba_tang.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\n0 error(s), 3 warning(s)\n"
+  },
+  {
+    "file": "hinh_1_6_tich_hop.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '7' overlap\nwarning: vertices '2' and '10' overlap\nwarning: vertices '2' and '12' overlap\nwarning: vertices '2' and '14' overlap\nwarning: vertices '2' and '16' overlap\nwarning: vertices '2' and '18' overlap\nwarning: edge '11' routes through vertex '2'\nwarning: edge '13' routes through vertex '2'\nwarning: edge '15' routes through vertex '2'\nwarning: edge '17' routes through vertex '2'\n0 error(s), 14 warning(s)\n"
+  },
+  {
+    "file": "hinh_2_1_silo.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '7' overlap\nwarning: vertices '2' and '10' overlap\nwarning: vertices '2' and '11' overlap\nwarning: vertices '2' and '14' overlap\nwarning: vertices '2' and '15' overlap\nwarning: vertices '2' and '18' overlap\n0 error(s), 10 warning(s)\n"
+  },
+  {
+    "file": "hinh_2_2_pool.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '7' overlap\n0 error(s), 5 warning(s)\n"
+  },
+  {
+    "file": "hinh_2_3_bridge.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '10' overlap\nwarning: vertices '2' and '12' overlap\nwarning: vertices '2' and '14' overlap\n0 error(s), 7 warning(s)\n"
+  },
+  {
+    "file": "hinh_2_4_hybrid.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '7' overlap\nwarning: vertices '2' and '8' overlap\nwarning: vertices '2' and '9' overlap\n0 error(s), 7 warning(s)\n"
+  },
+  {
+    "file": "hinh_3_1_use_case.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '7' overlap\nwarning: vertices '2' and '8' overlap\nwarning: vertices '2' and '9' overlap\nwarning: vertices '2' and '10' overlap\nwarning: vertices '2' and '11' overlap\nwarning: vertices '2' and '12' overlap\nwarning: vertices '2' and '13' overlap\nwarning: vertices '2' and '14' overlap\nwarning: vertices '9' and '10' overlap\nwarning: vertices '9' and '11' overlap\nwarning: vertices '9' and '12' overlap\nwarning: vertices '9' and '13' overlap\nwarning: vertices '9' and '14' overlap\nwarning: edge '17' routes through vertex '2'\nwarning: edge '17' routes through vertex '7'\nwarning: edge '17' routes through vertex '9'\nwarning: edge '19' routes through vertex '2'\nwarning: edge '19' routes through vertex '8'\nwarning: edge '19' routes through vertex '9'\n0 error(s), 23 warning(s)\n"
+  },
+  {
+    "file": "hinh_3_2_kien_truc.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '7' overlap\nwarning: vertices '2' and '8' overlap\nwarning: vertices '2' and '13' overlap\nwarning: vertices '2' and '15' overlap\nwarning: vertices '5' and '6' overlap\nwarning: vertices '5' and '7' overlap\nwarning: vertices '5' and '8' overlap\nwarning: edge '10' routes through vertex '2'\nwarning: edge '10' routes through vertex '5'\n0 error(s), 13 warning(s)\n"
+  },
+  {
+    "file": "hinh_3_3_luong_yeu_cau.drawio",
+    "code": 0,
+    "output": "0 error(s), 0 warning(s)\n"
+  },
+  {
+    "file": "hinh_3_4_erd.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '7' overlap\nwarning: vertices '2' and '8' overlap\nwarning: vertices '2' and '9' overlap\nwarning: vertices '2' and '10' overlap\nwarning: vertices '2' and '18' overlap\nwarning: edge '14' routes through vertex '2'\n0 error(s), 10 warning(s)\n"
+  },
+  {
+    "file": "hinh_3_5_metadata.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '8' overlap\nwarning: vertices '2' and '9' overlap\nwarning: vertices '2' and '12' overlap\n0 error(s), 6 warning(s)\n"
+  },
+  {
+    "file": "hinh_3_6_giao_dien.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '7' overlap\nwarning: vertices '2' and '8' overlap\nwarning: vertices '2' and '9' overlap\nwarning: vertices '2' and '10' overlap\nwarning: vertices '2' and '11' overlap\nwarning: vertices '2' and '12' overlap\nwarning: vertices '2' and '13' overlap\nwarning: vertices '6' and '7' overlap\nwarning: vertices '6' and '8' overlap\nwarning: vertices '9' and '10' overlap\nwarning: vertices '11' and '12' overlap\n0 error(s), 15 warning(s)\n"
+  },
+  {
+    "file": "hinh_3_7_trien_khai.drawio",
+    "code": 0,
+    "output": "warning: vertices '2' and '3' overlap\nwarning: vertices '2' and '4' overlap\nwarning: vertices '2' and '5' overlap\nwarning: vertices '2' and '6' overlap\nwarning: vertices '2' and '7' overlap\nwarning: vertices '2' and '8' overlap\nwarning: vertices '5' and '6' overlap\nwarning: vertices '5' and '7' overlap\nwarning: vertices '5' and '8' overlap\n0 error(s), 9 warning(s)\n"
+  }
+]

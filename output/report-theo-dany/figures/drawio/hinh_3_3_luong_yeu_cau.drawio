@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile>
+  <diagram id="seqlayout" name="Luồng tạo thẻ theo tenant">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="browser" value="Trình duyệt" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=70;fontFamily=Arial;fontSize=20;fontColor=#16232D;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="180" height="1015" as="geometry" />
+        </mxCell>
+        <mxCell id="filter" value="Xác thực và context" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=70;fontFamily=Arial;fontSize=20;fontColor=#16232D;" vertex="1" parent="1">
+          <mxGeometry x="350" y="40" width="180" height="1015" as="geometry" />
+        </mxCell>
+        <mxCell id="service" value="Nghiệp vụ Kanban" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=70;fontFamily=Arial;fontSize=20;fontColor=#16232D;" vertex="1" parent="1">
+          <mxGeometry x="660" y="40" width="180" height="1015" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="Database chung" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;size=70;fontFamily=Arial;fontSize=20;fontColor=#16232D;" vertex="1" parent="1">
+          <mxGeometry x="970" y="40" width="180" height="1015" as="geometry" />
+        </mxCell>
+        <mxCell id="act0" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;fontFamily=Arial;fontSize=20;fontColor=#16232D;" vertex="1" parent="db">
+          <mxGeometry x="85" y="185" width="10" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="act1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;fontFamily=Arial;fontSize=20;fontColor=#16232D;" vertex="1" parent="db">
+          <mxGeometry x="85" y="380" width="10" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="act2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;fontFamily=Arial;fontSize=20;fontColor=#16232D;" vertex="1" parent="db">
+          <mxGeometry x="85" y="645" width="10" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="act3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;fontFamily=Arial;fontSize=20;fontColor=#16232D;" vertex="1" parent="service">
+          <mxGeometry x="85" y="315" width="10" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="act4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;fillColor=#ffffff;fontFamily=Arial;fontSize=20;fontColor=#16232D;" vertex="1" parent="filter">
+          <mxGeometry x="85" y="120" width="10" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="m0" value="1. Token + tenant được chọn" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=0.5;exitY=0.1182;entryX=0;entryY=0.0;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="browser" target="act4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="2. Xác minh membership" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.0823;entryX=0;entryY=0.0;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act4" target="act0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" value="3. Quyền trong workspace" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;curved=0;rounded=0;strokeColor=#999999;fontColor=#999999;exitX=0;exitY=1.0;entryX=1;entryY=0.1646;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act0" target="act4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" value="4. TenantContext đã xác minh" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.2468;entryX=0;entryY=0.0;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act4" target="act3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" value="5. BEGIN; đặt context transaction" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.1413;entryX=0;entryY=0.0;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act3" target="act1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m5" value="6. Đọc metadata và dữ liệu" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.2826;entryX=0;entryY=0.5;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act3" target="act1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m6" value="7. Dữ liệu đúng tenant" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;curved=0;rounded=0;strokeColor=#999999;fontColor=#999999;exitX=0;exitY=1.0;entryX=1;entryY=0.4239;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act1" target="act3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m7" value="8. Kiểm tra quyền và quy tắc" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.5652;entryX=1;entryY=0.6304;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act3" target="act3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="810" y="615" /><mxPoint x="810" y="645" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8" value="9. Ghi thẻ; COMMIT / ROLLBACK" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.7174;entryX=0;entryY=0.0;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act3" target="act2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m9" value="10. Kết quả transaction" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;curved=0;rounded=0;strokeColor=#999999;fontColor=#999999;exitX=0;exitY=1.0;entryX=1;entryY=0.8587;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act2" target="act3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m10" value="11. Kết quả nghiệp vụ" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;curved=0;rounded=0;strokeColor=#999999;fontColor=#999999;exitX=0;exitY=1.0;entryX=1;entryY=0.8291;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act3" target="act4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m11" value="12. Dọn context trong finally" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=0.9114;entryX=1;entryY=0.9494;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act4" target="act4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="500" y="880" /><mxPoint x="500" y="910" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m12" value="13. Phản hồi" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;curved=0;rounded=0;strokeColor=#999999;fontColor=#999999;exitX=0;exitY=1.0;entryX=0.5;entryY=0.8966;fontFamily=Arial;fontSize=20;fontColor=#16232D;" edge="1" parent="1" source="act4" target="browser">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

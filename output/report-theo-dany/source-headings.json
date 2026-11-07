@@ -1,0 +1,587 @@
+[
+  [
+    109,
+    "Heading 1",
+    "MỞ ĐẦU"
+  ],
+  [
+    110,
+    "Heading 2",
+    "1. Bối cảnh và lý do chọn đề tài"
+  ],
+  [
+    111,
+    "Heading 2",
+    "2. Tổng quan tình hình nghiên cứu và vấn đề được lựa chọn"
+  ],
+  [
+    112,
+    "Heading 2",
+    "3. Mục tiêu và câu hỏi nghiên cứu"
+  ],
+  [
+    113,
+    "Heading 2",
+    "4. Đối tượng và phạm vi nghiên cứu"
+  ],
+  [
+    114,
+    "Heading 3",
+    "4.1. Đối tượng nghiên cứu"
+  ],
+  [
+    115,
+    "Heading 3",
+    "4.2. Phạm vi kiến trúc và dữ liệu"
+  ],
+  [
+    116,
+    "Heading 3",
+    "4.3. Phạm vi ứng dụng và thực nghiệm"
+  ],
+  [
+    117,
+    "Heading 2",
+    "5. Phương pháp nghiên cứu"
+  ],
+  [
+    124,
+    "Heading 2",
+    "6. Ý nghĩa khoa học và thực tiễn"
+  ],
+  [
+    125,
+    "Heading 2",
+    "7. Cấu trúc báo cáo"
+  ],
+  [
+    127,
+    "Heading 1",
+    "CHƯƠNG 1: CƠ SỞ LÝ THUYẾT VÀ MÔ HÌNH HÓA KHÁI NIỆM "
+  ],
+  [
+    128,
+    "Heading 1",
+    "ĐA THUÊ BAO"
+  ],
+  [
+    131,
+    "Heading 2",
+    "1.1. TỔNG QUAN VỀ SAAS VÀ ĐỘNG LỰC HÌNH THÀNH KIẾN TRÚC ĐA THUÊ BAO"
+  ],
+  [
+    133,
+    "Heading 3",
+    "1.1.1. Mô hình Phần mềm dưới dạng Dịch vụ (SaaS) và Tiến trình Tiến hóa của các Mô hình Chia sẻ Tài nguyên Điện toán"
+  ],
+  [
+    147,
+    "Heading 3",
+    "1.1.2. Động lực Kinh tế - Kỹ thuật và Mô hình Trưởng thành Kiến trúc SaaS (Chong & Carraro)"
+  ],
+  [
+    165,
+    "Heading 2",
+    "1.2. CHUẨN HÓA KHÁI NIỆM NỀN TẢNG, SỰ PHÂN KỲ GÓC NHÌN VÀ ĐỊNH NGHĨA ĐA THUÊ BAO (MULTI-TENANCY)"
+  ],
+  [
+    167,
+    "Heading 3",
+    "1.2.1. Chuẩn hóa Bộ ba Khái niệm Nền tảng: Thuê bao (Tenant) - Dịch vụ (Service) - Thực thể Vận hành (Instance)"
+  ],
+  [
+    173,
+    "Heading 3",
+    "1.2.2. Khảo cứu Hệ thống và Sự Phân kỳ Góc nhìn giữa Giới Học thuật và Giới Công nghiệp (Kabbedijk et al., 2015)"
+  ],
+  [
+    179,
+    "Heading 3",
+    "1.2.3. Định nghĩa Khoa học Chuẩn hóa về Đa thuê bao và Mô hình Khái niệm Tổng quát"
+  ],
+  [
+    193,
+    "Heading 2",
+    "1.3. NĂM ĐẶC TRƯNG KIẾN TRÚC CỐT LÕI CỦA HỆ THỐNG ĐA THUÊ BAO HIỆN ĐẠI"
+  ],
+  [
+    195,
+    "Heading 3",
+    "1.3.1. Chia sẻ tài nguyên trong suốt"
+  ],
+  [
+    198,
+    "Heading 3",
+    "1.3.2. Khả năng tùy biến động lúc chạy dựa trên Siêu dữ liệu"
+  ],
+  [
+    202,
+    "Heading 3",
+    "1.3.3. Tính cô lập đa chiều giữa các Thuê bao"
+  ],
+  [
+    209,
+    "Heading 3",
+    "1.3.4. Khả năng co giãn, tự phục vụ và vận hành vòng đời liên tục (Elasticity, Self-Service & Continuous Lifecycle)"
+  ],
+  [
+    216,
+    "Heading 3",
+    "1.3.5. Dịch vụ được đo lường và giám sát mức tiêu thụ theo Thuê bao (Tenant-Aware Metering & Monitoring)"
+  ],
+  [
+    223,
+    "Heading 2",
+    "1.4. PHÂN BIỆT VÀ MÔ HÌNH HÓA CÁC KHÁI NIỆM DỄ NHẦM LẪN"
+  ],
+  [
+    225,
+    "Heading 3",
+    "1.4.1. Nguồn gốc của Sự Nhầm lẫn Khái niệm từ Năm Đặc trưng Kiến trúc và Ba Tiêu chí Phân định Bản chất"
+  ],
+  [
+    234,
+    "Heading 3",
+    "1.4.2. Sơ đồ Mô hình hóa Trực quan và Phân tích Bản chất Bốn Mô hình"
+  ],
+  [
+    243,
+    "Heading 3",
+    "1.4.3. Bàn luận Chuyên sâu về Sự Đánh đổi Kiến trúc và Đúc kết"
+  ],
+  [
+    247,
+    "Heading 2",
+    "1.5. TÁI ĐỊNH NGHĨA NGĂN XẾP HỆ THỐNG VÀ KHÁI NIỆM RANH GIỚI THUÊ BAO"
+  ],
+  [
+    249,
+    "Heading 3",
+    "1.5.1. Phân tích Ngăn xếp Phần mềm Nguyên bản của Kabbedijk et al. (2015) và Giới hạn Lịch sử"
+  ],
+  [
+    258,
+    "Heading 3",
+    "1.5.2. Động lực Dịch chuyển Công nghệ và Đề xuất Mô hình Ngăn xếp Cập nhật cho Kỷ nguyên Cloud-Native"
+  ],
+  [
+    265,
+    "Heading 3",
+    "1.5.3. Định nghĩa Trừu tượng 9 Tầng Thành phần trong Ngăn xếp Đa thuê bao Hiện đại"
+  ],
+  [
+    276,
+    "Heading 3",
+    "1.5.4. Đề xuất Khái niệm \"Ranh giới Thuê bao\" (Tenant Boundary) và Phổ Độ dày Ranh giới từ Nghịch lý của Tính Trong suốt"
+  ],
+  [
+    277,
+    "Heading 4",
+    "1.5.4.1. Nghịch lý của Tính Trong suốt trong Kiến trúc Đa thuê bao"
+  ],
+  [
+    280,
+    "Heading 4",
+    "1.5.4.2. Đề xuất Định nghĩa Ranh giới Thuê bao và Ba Câu hỏi Phương pháp luận"
+  ],
+  [
+    286,
+    "Heading 4",
+    "1.5.4.3. Ba Thuộc tính Bất biến của Ranh giới Thuê bao"
+  ],
+  [
+    292,
+    "Heading 4",
+    "1.5.4.4. Bốn Chiều Ranh giới Thực thi"
+  ],
+  [
+    299,
+    "Heading 4",
+    "1.5.4.5. Phổ Độ dày Ranh giới (Boundary Thickness Spectrum) và Hai Quy luật Đánh đổi Kiến trúc"
+  ],
+  [
+    313,
+    "Heading 3",
+    "5.5. Mô hình Hóa Tổng thể Kiến trúc Đa thuê bao (Mô hình Tích hợp Đầy đủ)"
+  ],
+  [
+    323,
+    "Heading 2",
+    "1.6. CÁC KHÍA CẠNH XEM XÉT VÀ THÁCH THỨC CỐT LÕI TRONG THIẾT KẾ ĐA THUÊ BAO (KHUNG TIÊU CHÍ ĐÁNH GIÁ)"
+  ],
+  [
+    326,
+    "Heading 3",
+    "1.6.1. Định danh, Ánh xạ Yêu cầu và Quản lý Tên miền (Identity, Tenant Resolution & Routing)"
+  ],
+  [
+    329,
+    "Heading 3",
+    "6.2. Cô lập Thuê bao và Kiểm soát Bán kính Ảnh hưởng Sự cố (Tenant Isolation & Blast Radius)"
+  ],
+  [
+    333,
+    "Heading 3",
+    "1.6.3. Quản trị Hiệu năng và Ngăn chặn Hiệu ứng Hàng xóm Ồn ào (Performance Governance & Noisy Neighbor Mitigation)"
+  ],
+  [
+    337,
+    "Heading 3",
+    "6.4. Vòng đời Thuê bao và Mặt phẳng Điều khiển Tập trung (Tenant Lifecycle & Control Plane)"
+  ],
+  [
+    341,
+    "Heading 3",
+    "6.5. Khả năng Tùy biến Lúc chạy và Quản trị Tính năng (Runtime Customization & Feature Governance)"
+  ],
+  [
+    345,
+    "Heading 3",
+    "6.6. Chiến lược Sao lưu, Phục hồi Thảm họa và Cập nhật Hệ thống (Backup, DR & Zero-Downtime Migration)"
+  ],
+  [
+    349,
+    "Heading 3",
+    "6.7. Thách thức Kỹ thuật trong Xây dựng Bộ máy Đo lường Tài nguyên và Ánh xạ Định giá (Metering Engine & Pricing Mapping)"
+  ],
+  [
+    353,
+    "Heading 3",
+    "6.8. Tổng kết Chương 1"
+  ],
+  [
+    357,
+    "Heading 1",
+    "CHƯƠNG 2: KIẾN TRÚC HỆ THỐNG ĐA THUÊ BAO "
+  ],
+  [
+    360,
+    "Heading 2",
+    "2.1. Tổng quan Kiến trúc Hệ thống Đa thuê bao"
+  ],
+  [
+    362,
+    "Heading 3",
+    "2.1.1. Bản chất Thiết kế Hệ thống Đa thuê bao, Khái niệm Tách - Gộp và Hai Trục Phân tích Kiến trúc"
+  ],
+  [
+    389,
+    "Heading 3",
+    "2.1.2. Sơ đồ Kiến trúc Tổng thể Tham chiếu (Master Blueprint) và Hệ Quy ước Biểu diễn Nhất quán"
+  ],
+  [
+    403,
+    "Heading 2",
+    "2.2. Các Mô hình Triển khai Kiến trúc Đa thuê bao Kinh điển"
+  ],
+  [
+    405,
+    "Heading 3",
+    "2.2.1. Mô hình Silo (Cô lập Toàn phần theo Thuê bao)"
+  ],
+  [
+    412,
+    "Heading 3",
+    "2.2.2. Mô hình Pool (Chia sẻ Toàn phần trên Ranh giới Logic)"
+  ],
+  [
+    420,
+    "Heading 3",
+    "2.2.3. Mô hình Bridge (Lai ghép theo Chiều dọc Ngăn xếp: Gộp Tính toán - Tách Dữ liệu)"
+  ],
+  [
+    429,
+    "Heading 3",
+    "2.2.4. Mô hình Hybrid (Phân tầng Hỗn hợp theo Phân khúc Thuê bao) và So sánh Tổng hợp"
+  ],
+  [
+    441,
+    "Heading 2",
+    "2.3. Phân tích Chiến lược Tách (Isolation) và Gộp (Sharing) qua Từng Tầng Ngăn xếp"
+  ],
+  [
+    444,
+    "Heading 3",
+    "2.3.1. Tầng Hạ tầng Đám mây: Phần cứng Vật lý, Mạng và Ảo hóa / Container (Tầng 1 - 3)"
+  ],
+  [
+    446,
+    "Heading 4",
+    "2.3.1.1. Vị trí và Vai trò Nền móng trong Ngăn xếp"
+  ],
+  [
+    448,
+    "Heading 4",
+    "2.3.1.2. Phương án Tách (Dedicated Infrastructure / Network / Compute Isolation)"
+  ],
+  [
+    453,
+    "Heading 4",
+    "2.3.1.3. Phương án Gộp (Shared Infrastructure & Multi-Tenant Kubernetes Cluster)"
+  ],
+  [
+    459,
+    "Heading 4",
+    "2.3.1.4. Ánh xạ Chiều Ranh giới Thuê bao (B1 - B3) và Bàn luận Đánh đổi tại Tầng 1 - 3"
+  ],
+  [
+    465,
+    "Heading 3",
+    "2.3.2. Tầng Lưu trữ Đám mây - Cloud Storage (Tầng 4)"
+  ],
+  [
+    467,
+    "Heading 4",
+    "2.3.2.1. Vị trí và Vai trò Quản trị Dữ liệu Phi cấu trúc trong Ngăn xếp"
+  ],
+  [
+    469,
+    "Heading 4",
+    "2.3.2.2. Phương án Tách (Bucket-per-Tenant / Volume-per-Tenant)"
+  ],
+  [
+    473,
+    "Heading 4",
+    "2.3.2.3. Phương án Gộp (Shared Bucket với Prefix Partitioning & Short-Lived Pre-signed URL)"
+  ],
+  [
+    481,
+    "Heading 4",
+    "2.3.2.4. Ánh xạ Chiều Ranh giới Thuê bao (B2 & B1) và Bàn luận Đánh đổi tại Tầng 4"
+  ],
+  [
+    486,
+    "Heading 3",
+    "2.3.3. Tầng Cơ sở Dữ liệu và Hệ Quản trị CSDL (Tầng 5 - 6)"
+  ],
+  [
+    493,
+    "Heading 4",
+    "2.3.3.2. Phương án 1 - Tách toàn phần Hệ Quản trị và Cơ sở Dữ liệu (Dedicated DBMS / Database-per-Tenant - Tách cả Tầng 5 và Tầng 6)"
+  ],
+  [
+    501,
+    "Heading 4",
+    "2.3.3.3. Phương án 2 - Gộp chung Toàn phần với Bảng Chia sẻ và RLS (Shared DBMS, Shared Database, Shared Table + Row-Level Security - Gộp cả Tầng 5 và Tầng 6)"
+  ],
+  [
+    510,
+    "Heading 4",
+    "2.3.3.4. Phương án 3 - Điểm Cân bằng Trung gian: Gộp DBMS nhưng Tách Schema (Shared DBMS, Shared Database, Dedicated Schema-per-Tenant - Gộp Tầng 5, Tách không gian tên Tầng 6)"
+  ],
+  [
+    519,
+    "Heading 4",
+    "2.3.3.5. Ánh xạ Chiều Ranh giới Thuê bao (B2 & B3) và Bảng Đối sánh Chuyên sâu tại Tầng 5 - 6"
+  ],
+  [
+    526,
+    "Heading 3",
+    "2.3.4. Tầng Phần mềm Trung gian - Middleware (Tầng 7)"
+  ],
+  [
+    528,
+    "Heading 4",
+    "2.3.4.1. Vị trí và Vai trò \"Trạm Kiểm soát Trung tâm\" trong Ngăn xếp"
+  ],
+  [
+    534,
+    "Heading 4",
+    "2.3.4.2. Phương án Tách tại Tầng 7 (Dedicated Middleware Instances)"
+  ],
+  [
+    536,
+    "Heading 4",
+    "2.3.4.3. Phương án Gộp tại Tầng 7 và Cơ chế Điều phối Nhận thức Thuê bao (Shared Tenant-Aware Middleware)"
+  ],
+  [
+    546,
+    "Heading 4",
+    "2.3.4.4. Ánh xạ Chiều Ranh giới Thuê bao (B1, B3, B4) và Bàn luận Đánh đổi tại Tầng 7"
+  ],
+  [
+    552,
+    "Heading 3",
+    "2.3.5. Tầng Thực thi Ứng dụng và Mã nguồn / Cấu hình Logic (Tầng 8 - 9)"
+  ],
+  [
+    554,
+    "Heading 4",
+    "2.3.5.1. Vị trí và Sự Phân công Bản chất giữa Tầng 8 (Không gian Tiến trình lúc chạy) và Tầng 9 (Không gian Mã nguồn & Cấu hình)"
+  ],
+  [
+    558,
+    "Heading 4",
+    "2.3.5.2. Chiến lược Tách và Gộp tại Tầng 8 (Application Runtime)"
+  ],
+  [
+    565,
+    "Heading 4",
+    "2.3.5.3. Chiến lược tại Tầng 9 (Application Code & Logical Configuration): Tính Bất biến của Single Codebase và Cơ chế Tùy biến Động"
+  ],
+  [
+    581,
+    "Heading 4",
+    "2.3.5.4. Ánh xạ Chiều Ranh giới Thuê bao (B1, B3, B4) và Bàn luận Đánh đổi tại Tầng 8 - 9"
+  ],
+  [
+    589,
+    "Heading 3",
+    "2.3.6. Bảng Ma trận Tổng hợp Chiến lược Tách - Gộp qua 9 Tầng Ngăn xếp"
+  ],
+  [
+    593,
+    "Heading 2",
+    "2.4. Các Kịch bản Phối hợp Tách - Gộp Điển hình trong Thực tế"
+  ],
+  [
+    595,
+    "Heading 3",
+    "2.4.1. Kịch bản 1 - Tối ưu hóa Chi phí Tuyệt đối (The SMB / Startup Profile - Mô hình Full-Stack Pool)"
+  ],
+  [
+    596,
+    "Heading 4",
+    "2.4.1.1. Bối cảnh Áp dụng và Mục tiêu Trọng tâm"
+  ],
+  [
+    598,
+    "Heading 4",
+    "2.4.1.2. Cấu hình Phối hợp Tách - Gộp trên 9 Tầng và Sơ đồ Kiến trúc"
+  ],
+  [
+    609,
+    "Heading 3",
+    "2.4.2. Kịch bản 2 - Cô lập Nghiêm ngặt vì Tuân thủ Pháp lý"
+  ],
+  [
+    610,
+    "Heading 4",
+    "2.4.2.1. Bối cảnh Áp dụng và Mục tiêu Trọng tâm"
+  ],
+  [
+    612,
+    "Heading 4",
+    "2.4.2.2. Cấu hình Phối hợp Tách - Gộp trên 9 Tầng và Sơ đồ Kiến trúc"
+  ],
+  [
+    620,
+    "Heading 3",
+    "2.4.3. Kịch bản 3 - Phân bổ Hỗn hợp Đa phân khúc và Khoanh vùng theo Ô (The Tiered Platform & Cell-Based Profile - Mô hình Hybrid + Bridge + Cell-Based)"
+  ],
+  [
+    621,
+    "Heading 4",
+    "2.4.3.1. Bối cảnh Áp dụng và Bài toán Bán kính Sự cố ở Quy mô Lớn"
+  ],
+  [
+    626,
+    "Heading 4",
+    "2.4.3.2. Cấu hình Phối hợp Đa tầng và Sơ đồ Kiến trúc Cell-Based"
+  ],
+  [
+    637,
+    "Heading 3",
+    "2.4.4. Nhận xét Tổng hợp: Ma trận Ánh xạ Kịch bản - 9 Tầng và Hai Quy luật Kiến trúc"
+  ],
+  [
+    643,
+    "Heading 2",
+    "2.5. Các Cơ chế Kỹ thuật Cốt lõi Đảm bảo Vận hành Đa thuê bao"
+  ],
+  [
+    645,
+    "Heading 3",
+    "2.5.1. Cơ chế Nhận diện và Lan truyền Ngữ cảnh Thuê bao (Tenant Context Resolution & Propagation)"
+  ],
+  [
+    647,
+    "Heading 4",
+    "2.5.1.1. Phân giải Định danh từ Token Xác thực (JWT Claims) thay vì Tham số Thô từ Client"
+  ],
+  [
+    651,
+    "Heading 4",
+    "2.5.1.2. Lưu trữ Ngữ cảnh Cô lập theo Luồng và Quy tắc Dọn dẹp Bắt buộc"
+  ],
+  [
+    656,
+    "Heading 4",
+    "2.5.1.3. Lan truyền Ngữ cảnh qua các Tác vụ Bất đồng bộ"
+  ],
+  [
+    664,
+    "Heading 3",
+    "2.5.2. Cơ chế Cô lập Dữ liệu Thực thi bằng RLS và Quản lý Kết nối SET LOCAL (Database-Level Isolation & Connection Pooling)"
+  ],
+  [
+    666,
+    "Heading 4",
+    "2.5.2.1. Thiết lập Rào chắn Kép trong Nhân PostgreSQL bằng Chính sách Row-Level Security (RLS)"
+  ],
+  [
+    689,
+    "Heading 4",
+    "2.5.2.2. Bài toán Ô nhiễm Phiên trên Connection Pool và Giải pháp Giao dịch Nguyên tử với SET LOCAL"
+  ],
+  [
+    709,
+    "Heading 3",
+    "2.5.3. Cơ chế Bộ nhớ Đệm Hai Tầng Nhận thức Thuê bao (Two-Tier Tenant-Aware Caching & Thuật toán W-TinyLFU)"
+  ],
+  [
+    711,
+    "Heading 4",
+    "2.5.3.1. Kiến trúc Phối hợp Bộ nhớ Đệm Hai Tầng (L1 In-Memory Cache + L2 Distributed Cache)"
+  ],
+  [
+    715,
+    "Heading 4",
+    "2.5.3.2. Quy chuẩn Đóng gói Không gian Khóa (Tenant-Prefixed Key Namespacing)"
+  ],
+  [
+    720,
+    "Heading 4",
+    "2.5.3.3. Chống Noisy Neighbor trên Bộ nhớ Đệm bằng Thuật toán Thu hồi W-TinyLFU"
+  ],
+  [
+    732,
+    "Heading 3",
+    "2.5.4. Cơ chế Quản lý Tùy biến Động bằng Cờ Tính năng (Dynamic Feature Flags theo Chuẩn OpenFeature)"
+  ],
+  [
+    735,
+    "Heading 4",
+    "2.5.4.1. Mô hình Toán học của Hàm Đánh giá Cờ Tính năng Đa thuê bao"
+  ],
+  [
+    743,
+    "Heading 4",
+    "2.5.4.2. Thứ tự Ưu tiên Phân giải Quy tắc (Rule Resolution Precedence) và Vận hành Thời gian thực"
+  ],
+  [
+    755,
+    "Heading 2",
+    "2.6. Khung Quyết định Lựa chọn Kiến trúc và Định vị Đề tài"
+  ],
+  [
+    757,
+    "Heading 3",
+    "2.6.1. Năm Tiêu chí Đầu vào Cốt lõi của Bài toán Lựa chọn Kiến trúc"
+  ],
+  [
+    764,
+    "Heading 3",
+    "2.6.2. Lưu đồ Cây Quyết định Kiến trúc Tổng quát (Architectural Decision Tree)"
+  ],
+  [
+    780,
+    "Heading 3",
+    "2.6.3. Định vị Kiến trúc cho Nền tảng SaaS Kanban của Đề tài"
+  ],
+  [
+    794,
+    "Heading 3",
+    "2.6.4. Tổng kết Chương 2 và Bảng Đối soát Chuyển giao sang Chương 3"
+  ]
+]

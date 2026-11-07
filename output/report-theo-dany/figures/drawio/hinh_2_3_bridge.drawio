@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio" version="32.6.10">
+  <diagram id="hinh_2_3_bridge" name="bridge">
+    <mxGraphModel grid="1" gridSize="10" page="0" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1100" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Tenant A" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="20" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Tenant B" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="420" y="20" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Tenant C" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="790" y="20" width="260" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="App chung&#10;Chọn đúng nguồn dữ liệu theo tenant" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="220" y="210" width="660" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.25;entryY=0;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.75;entryY=0;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Schema hoặc DB A" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;shape=cylinder3;size=15;boundedLbl=1;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="430" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.25;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="6" target="10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Schema hoặc DB B" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;shape=cylinder3;size=15;boundedLbl=1;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="410" y="430" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="6" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Schema hoặc DB C" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;shape=cylinder3;size=15;boundedLbl=1;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="780" y="430" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.75;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="6" target="14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

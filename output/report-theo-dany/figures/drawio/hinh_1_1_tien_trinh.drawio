@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio" version="32.6.10">
+  <diagram id="hinh_1_1_tien_trinh" name="Tiến trình chia sẻ tài nguyên">
+    <mxGraphModel grid="1" gridSize="10" page="0" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1100" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Time-sharing&#10;Chia sẻ thời gian CPU" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="100" width="235" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="ASP&#10;Vận hành ứng dụng từ xa" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="295" y="100" width="235" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Web multi-user&#10;Nhiều tài khoản người dùng" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="570" y="100" width="235" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="SaaS multi-tenant&#10;Ngữ cảnh và cấu hình tổ chức" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="845" y="100" width="235" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Trọng tâm chia sẻ chuyển từ năng lực tính toán sang ứng dụng có quản trị theo tổ chức." style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;text;strokeColor=none;fillColor=none;fontSize=23;fontStyle=0;align=center;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="325" width="1040" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

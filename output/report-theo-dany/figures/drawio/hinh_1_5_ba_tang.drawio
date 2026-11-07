@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio" version="32.6.10">
+  <diagram id="hinh_1_5_ba_tang" name="Mô hình ba tầng">
+    <mxGraphModel grid="1" gridSize="10" page="0" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1100" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="TẦNG NGƯỜI THUÊ&#10;Tenant A và các user A | Tenant B và các user B" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="1040" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="TẦNG NHÀ CUNG CẤP DỊCH VỤ&#10;Quản lý tenant · Dịch vụ Kanban · Metadata và phân quyền" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#F1EDF7;strokeColor=#837294;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="30" y="250" width="1040" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="TẦNG INSTANCE VÀ HẠ TẦNG&#10;App/Web Server instance · Database Server · Lưu trữ" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="30" y="480" width="1040" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Yêu cầu có định danh người dùng và tenant" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Thực thi trên tài nguyên được bố trí" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=21;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

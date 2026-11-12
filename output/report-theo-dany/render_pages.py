@@ -11,5 +11,5 @@ def word_pdf(doc_path,user_profile,convert_tmp_dir,stem,verbose):
     return str(target),'Native Word PDF export: Windows runtime has no bundled LibreOffice.'
 mod.convert_to_pdf=word_pdf
 out=BASE/(sys.argv[1] if len(sys.argv)>1 else 'pages')
-paths=mod.rasterize(str(BASE.parents[1]/'Bao cao NCKH theo dan y.docx'),str(out),130,False,False)
+paths=mod.rasterize(str(BASE.parents[1]/'Bao cao NCKH bo sung ngan xep 9 tang.docx'),str(out),130,False,False)
 print('Rendered',len(paths),'pages through render_docx.py')

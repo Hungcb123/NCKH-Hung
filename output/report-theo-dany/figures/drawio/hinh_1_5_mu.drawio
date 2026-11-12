@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio" version="32.6.10">
+  <diagram id="hinh_1_5_mu" name="Mô hình Đa người dùng (Multi-User – MU)">
+    <mxGraphModel grid="1" gridSize="10" page="0" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1100" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Tập người dùng cá nhân (Định danh 1 lớp theo user_id — Không chia theo Tenant)" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;swimlane;startSize=42;container=1;pointerEvents=0;collapsible=0;horizontal=1;fontSize=20;fontStyle=1;fillColor=#F5F5F5;swimlaneFillColor=#FFFFFF;strokeColor=#7D858B;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="70" y="20" width="960" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="User 1&#10;(user_id = 1)" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=22;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="105" y="78" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="User 2&#10;(user_id = 2)" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=22;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="420" y="78" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="User 3&#10;(user_id = 3)" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=22;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="735" y="78" width="260" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Một Web / App Server Instance dùng chung&#10;Xác thực tài khoản cá nhân · Giao diện và quy tắc nghiệp vụ chung cho toàn hệ thống" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=22;fillColor=#F1EDF7;strokeColor=#837294;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="130" y="240" width="840" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Database Server / Một Database dùng chung&#10;Bảng dữ liệu gắn user_id · Không có phân vùng tổ chức (tenant_id) hay Metadata theo thuê bao" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;shape=cylinder3;size=15;boundedLbl=1;fontSize=22;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="160" y="425" width="780" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.2;entryY=0;" edge="1" parent="1" source="4" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.8;entryY=0;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Truy vấn theo user_id" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Nhiều cá nhân cùng dùng chung ứng dụng và database, nhưng không có quyền quản trị cấu hình và ranh giới dữ liệu cấp tổ chức (Tenant)." style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;text;strokeColor=none;fillColor=none;fontSize=21;fontStyle=0;align=center;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="15" y="570" width="1070" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

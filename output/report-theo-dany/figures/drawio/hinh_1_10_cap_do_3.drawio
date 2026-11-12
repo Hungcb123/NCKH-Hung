@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio" version="32.6.10">
+  <diagram id="hinh_1_10_cap_do_3" name="Cấp độ 3 – Configurable, Multi-Tenant-Efficient">
+    <mxGraphModel grid="1" gridSize="10" page="0" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1100" height="710" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Tenant A (Tổ chức A)&#10;Admin A, User A1, A2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=21;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="15" width="320" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Một Codebase chuẩn duy nhất&#10;(Single Codebase)" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=21;fillColor=#F5F5F5;strokeColor=#7D858B;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="390" y="15" width="320" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Tenant B (Tổ chức B)&#10;Admin B, User B1, B2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=21;fillColor=#FFF3E6;strokeColor=#AF7D46;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="740" y="15" width="320" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Một Web / App Server Instance dùng chung (Phục vụ đồng thời nhiều Tenant)" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;swimlane;startSize=42;container=1;pointerEvents=0;collapsible=0;horizontal=1;fontSize=21;fontStyle=1;fillColor=#EAF4EC;swimlaneFillColor=#FFFFFF;strokeColor=#5C8168;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="175" width="1020" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="1. Xác minh ngữ cảnh&#10;TenantContext&#10;(tenant_id, user_id, role)" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=21;fillColor=#F1EDF7;strokeColor=#837294;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="70" y="235" width="290" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="2. Tùy biến lúc chạy (Runtime)&#10;Nạp Metadata theo tenant_id&#10;(Giao diện, quy tắc WIP...)" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=21;fillColor=#FFF3E6;strokeColor=#AF7D46;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="405" y="235" width="290" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="3. Thực thi nghiệp vụ chung&#10;Xử lý request &amp; truy vấn&#10;gắn khóa tenant_id" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=21;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="740" y="235" width="290" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Bảng Metadata dùng chung&#10;(tenant_config: Config A | Config B)" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;shape=cylinder3;size=15;boundedLbl=1;fontSize=21;fillColor=#FFF3E6;strokeColor=#AF7D46;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="70" y="465" width="430" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Database Server / Bảng nghiệp vụ dùng chung&#10;Phân vùng logic bằng Tenant ID + RLS (Dữ liệu A | Dữ liệu B)" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;shape=cylinder3;size=15;boundedLbl=1;fontSize=21;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="540" y="465" width="520" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Request A" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.15;entryY=0;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Triển khai" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Request B" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.85;entryY=0;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="Đọc / cập nhật Metadata runtime" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;dashed=1;" edge="1" parent="1" source="8" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="Truy vấn gắn tenant_id" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.65;entryY=0;" edge="1" parent="1" source="9" target="13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="Cấp độ 3 (Mục tiêu đề tài): Dùng chung Codebase, một App Server Instance và một Database;&#10;tùy biến ngay tại thời điểm chạy (runtime) qua Metadata và cô lập dữ liệu logic bằng Tenant ID." style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;text;strokeColor=none;fillColor=none;fontSize=21;fontStyle=1;align=center;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="620" width="1060" height="65" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

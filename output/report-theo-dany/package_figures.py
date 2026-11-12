@@ -19,17 +19,18 @@ for file in final.glob('*.png'):
 for file in final.glob('*.png'):
     with Image.open(file) as im:im.verify()
 manifest=json.loads((fig/'manifest.json').read_text(encoding='utf-8'))
-assert len(list(final.glob('*.png')))==17
+assert len(list(final.glob('*.png')))==19
 note='''BỘ HÌNH BÁO CÁO THEO DANY.MD
 
-17 hình được vẽ lại bằng draw.io, tương ứng đúng hình trong bản Word.
+19 hình được vẽ lại bằng draw.io, tương ứng đúng hình trong bản Word.
 - drawio/: bản nguồn chỉnh sửa trực tiếp.
 - png/: ảnh 2400 px, có nhúng nguồn, mở lại được bằng draw.io.
 - svg/: ảnh vector có nhúng nguồn.
 
 Hình lý thuyết minh họa khái niệm; hình Chương 3 là thiết kế đề xuất.
 Đồ thị TCO dùng góc nhìn nhà cung cấp trong cùng kỳ đánh giá, không phải số đo thực nghiệm.
-Nét liền chỉ quan hệ phục vụ/xử lý; nét đứt trong mô hình tổng thể chỉ phạm vi áp dụng kiểm soát.
+Trong sơ đồ luồng, đường liền chỉ quan hệ phục vụ/xử lý; nét đứt trong mô hình tổng thể chỉ phạm vi áp dụng kiểm soát.
+Riêng ngăn xếp chín tầng, viền liền và viền đứt phân biệt phạm vi phân tích theo chú thích ngay dưới hình; không biểu thị đường đi của request.
 Lược đồ dữ liệu đọc lực lượng quan hệ từ trái sang phải hoặc từ trên xuống dưới.
 Configurable, Multi-Tenant-Efficient: mã và backend chung, dữ liệu có Tenant ID, metadata áp dụng lúc chạy.
 

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio" version="32.6.10">
+  <diagram id="hinh_1_3_st" name="Mô hình Đơn thuê bao (Single-Tenant – ST)">
+    <mxGraphModel grid="1" gridSize="10" page="0" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1100" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Môi trường dành riêng của Tenant A" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;swimlane;startSize=42;container=1;pointerEvents=0;collapsible=0;horizontal=1;fontSize=21;fontStyle=1;fillColor=#EDF3F8;swimlaneFillColor=#FFFFFF;strokeColor=#57748C;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="490" height="535" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Tenant A (Tổ chức A)&#10;Membership: Admin A, User A1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="65" y="80" width="420" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="App Server Instance A&#10;Chạy với cấu hình riêng của A" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#F1EDF7;strokeColor=#837294;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="65" y="240" width="420" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Database Server / Database A&#10;Dữ liệu độc lập của Tenant A" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;shape=cylinder3;size=15;boundedLbl=1;fontSize=23;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="85" y="405" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Request của A" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Kết nối DB riêng" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Môi trường dành riêng của Tenant B" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;swimlane;startSize=42;container=1;pointerEvents=0;collapsible=0;horizontal=1;fontSize=21;fontStyle=1;fillColor=#FFF3E6;swimlaneFillColor=#FFFFFF;strokeColor=#AF7D46;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="20" width="490" height="535" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Tenant B (Tổ chức B)&#10;Membership: Admin B, User B1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#FFF3E6;strokeColor=#AF7D46;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="615" y="80" width="420" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="App Server Instance B&#10;Chạy với cấu hình riêng của B" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#F1EDF7;strokeColor=#837294;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="615" y="240" width="420" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Database Server / Database B&#10;Dữ liệu độc lập của Tenant B" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;shape=cylinder3;size=15;boundedLbl=1;fontSize=23;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;" vertex="1" parent="1">
+          <mxGeometry x="635" y="405" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Request của B" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="10" target="11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Kết nối DB riêng" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Arial;fontSize=20;fontColor=#16232D;labelBackgroundColor=#FFFFFF;strokeColor=#425C70;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Mỗi Tenant sở hữu đơn vị App Server Instance và Database riêng tại tầng đang xét; không chia sẻ tiến trình hoặc bảng dữ liệu." style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;text;strokeColor=none;fillColor=none;fontSize=21;fontStyle=0;align=center;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="570" width="1060" height="45" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

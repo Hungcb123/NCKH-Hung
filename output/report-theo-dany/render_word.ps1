@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-$inputDoc = 'D:\NCKH\Bao cao NCKH theo dan y.docx'
+$inputDoc = 'D:\NCKH\Bao cao NCKH bo sung ngan xep 9 tang.docx'
 $outputPdf = 'D:\NCKH\output\report-theo-dany\Bao cao NCKH theo dan y.pdf'
 $wordApp = $null
 $wordDoc = $null
@@ -14,13 +14,13 @@ try {
         $tocStyle = $wordDoc.Styles.Item($styleId)
         $tocStyle.Font.Name = 'Times New Roman'
         $tocStyle.Font.Size = 11
-        $tocStyle.ParagraphFormat.SpaceAfter = 3
+        $tocStyle.ParagraphFormat.SpaceAfter = 2
         $tocStyle.ParagraphFormat.Alignment = 0
     }
     foreach ($toc in $wordDoc.TablesOfContents) {
         $toc.Range.Font.Name = 'Times New Roman'
         $toc.Range.Font.Size = 11
-        $toc.Range.ParagraphFormat.SpaceAfter = 3
+        $toc.Range.ParagraphFormat.SpaceAfter = 2
         $toc.Range.ParagraphFormat.Alignment = 0
     }
     $wordDoc.Repaginate()

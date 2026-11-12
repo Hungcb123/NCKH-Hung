@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio" version="32.6.10">
+  <diagram id="hinh_1_16_ngan_xep_cap_nhat" name="Ngăn xếp chín tầng cập nhật">
+    <mxGraphModel grid="1" gridSize="10" page="0" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;fillColor=none;strokeColor=none;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="1000" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="[9] Application Instance&#10;Bản ứng dụng đang chạy: Web API, worker, microservice" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;fontSize=22;spacing=2;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="15" width="940" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="[8] Application Server&#10;Môi trường thực thi: JVM, Node.js, Web runtime" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#EDF3F8;strokeColor=#57748C;strokeWidth=1.8;fontSize=22;spacing=2;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="81" width="940" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="[7] Middleware&#10;API Gateway, cache, message queue, object storage" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#FFF3E6;strokeColor=#AF7D46;strokeWidth=1.8;fontSize=22;spacing=2;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="147" width="940" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="[6] Database Schema&#10;Lược đồ bảng; schema riêng hoặc bảng chung có Tenant ID" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;fontSize=22;spacing=2;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="213" width="940" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="[5] Database&#10;Đơn vị cơ sở dữ liệu logic trong DBMS" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;fontSize=22;spacing=2;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="279" width="940" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="[4] Database Server&#10;Dịch vụ DBMS: PostgreSQL, MySQL" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#EAF4EC;strokeColor=#5C8168;strokeWidth=1.8;fontSize=22;spacing=2;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="345" width="940" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="[3] Operating System&#10;Hệ điều hành; container dùng namespaces và cgroups" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#F5F5F5;strokeColor=#7D858B;strokeWidth=1.8;fontSize=22;spacing=2;rounded=0;dashed=1;dashPattern=6 4;" vertex="1" parent="1">
+          <mxGeometry x="30" y="411" width="940" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="[2] Virtual Machine&#10;Máy ảo và cơ chế ảo hóa; có thể không sử dụng" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#F5F5F5;strokeColor=#7D858B;strokeWidth=1.8;fontSize=22;spacing=2;rounded=0;dashed=1;dashPattern=6 4;" vertex="1" parent="1">
+          <mxGeometry x="30" y="477" width="940" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="[1] Hardware&#10;CPU, RAM, mạng và thiết bị lưu trữ vật lý" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;rounded=1;arcSize=8;fontSize=23;fillColor=#F5F5F5;strokeColor=#7D858B;strokeWidth=1.8;fontSize=22;spacing=2;rounded=0;dashed=1;dashPattern=6 4;" vertex="1" parent="1">
+          <mxGeometry x="30" y="543" width="940" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Nét liền: phạm vi phân tích phần mềm của bản cập nhật&#10;Nét đứt: hạ tầng và môi trường thực thi; có thể chia sẻ hoặc tách riêng" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#16232D;fontSize=24;spacing=10;align=center;verticalAlign=middle;text;strokeColor=none;fillColor=none;fontSize=22;fontStyle=0;align=center;spacing=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="625" width="940" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

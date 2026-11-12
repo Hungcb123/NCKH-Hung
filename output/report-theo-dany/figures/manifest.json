@@ -2,82 +2,182 @@
   {
     "stem": "hinh_1_1_tien_trinh",
     "caption": "Hình 1.1 Các hướng phát triển của mô hình chia sẻ tài nguyên",
-    "section": "1.1.2",
+    "section": "1.1.1",
     "meaning": "Các mô hình có thể cùng tồn tại; mũi tên biểu diễn sự kế thừa ý tưởng.",
     "width": 1100,
-    "height": 430
+    "height": 430,
+    "after": 1
   },
   {
     "stem": "hinh_1_2_tco",
-    "caption": "Hình 1.2 Chi phí sở hữu của nhà cung cấp theo số tenant",
-    "section": "1.1.4",
-    "meaning": "Trục hoành là số tổ chức; trục tung là tổng chi phí trong cùng kỳ; điểm giao là cân bằng chi phí hai phương án.",
+    "caption": "Hình 1.2 Chi phí sở hữu (TCO) của nhà cung cấp dịch vụ theo quy mô thuê bao",
+    "section": "1.1.2",
+    "meaning": "Trục hoành là số tổ chức thuê dịch vụ; trục tung là tổng chi phí của nhà cung cấp; n* là điểm giao cân bằng chi phí.",
     "width": 1100,
-    "height": 720
+    "height": 720,
+    "after": 1
   },
   {
-    "stem": "hinh_1_3_st_mi_mu_mt",
-    "caption": "Hình 1.3 Phân biệt đơn vị tổ chức của ST MI MU và MT",
+    "stem": "hinh_1_3_st",
+    "caption": "Hình 1.3 Sơ đồ chi tiết mô hình Đơn thuê bao (Single-Tenant – ST)",
+    "section": "1.3.1",
+    "meaning": "Mỗi tổ chức thuê bao sử dụng App Server Instance và Database riêng biệt ở tầng đang xét.",
+    "width": 1100,
+    "height": 630,
+    "after": 0
+  },
+  {
+    "stem": "hinh_1_4_mi",
+    "caption": "Hình 1.4 Sơ đồ chi tiết mô hình Đa instance (Multi-Instance – MI)",
+    "section": "1.3.2",
+    "meaning": "MI phản ánh số lượng bản ứng dụng đang chạy, có thể gắn riêng theo tenant hoặc cùng chia sẻ một nguồn dữ liệu.",
+    "width": 1100,
+    "height": 640,
+    "after": 0
+  },
+  {
+    "stem": "hinh_1_5_mu",
+    "caption": "Hình 1.5 Sơ đồ chi tiết mô hình Đa người dùng (Multi-User – MU)",
+    "section": "1.3.3",
+    "meaning": "Nhiều cá nhân truy cập trên cùng một ứng dụng nhưng không hình thành các không gian tổ chức thuê bao độc lập.",
+    "width": 1100,
+    "height": 630,
+    "after": 0
+  },
+  {
+    "stem": "hinh_1_6_mt",
+    "caption": "Hình 1.6 Sơ đồ chi tiết mô hình Đa thuê bao (Multi-Tenant – MT)",
+    "section": "1.3.4",
+    "meaning": "Nhiều tổ chức thuê bao dùng chung App Server Instance và Database với ngữ cảnh, Metadata và phân vùng dữ liệu riêng theo Tenant ID.",
+    "width": 1100,
+    "height": 690,
+    "after": 0
+  },
+  {
+    "stem": "hinh_1_7_st_mi_mu_mt",
+    "caption": "Hình 1.7 Sơ đồ so sánh tổng quát bốn mô hình ST, MI, MU và MT",
     "section": "1.3.5",
-    "meaning": "MI mô tả số bản chạy, MU mô tả nhiều cá nhân; ST và MT mô tả phạm vi phục vụ thuê bao.",
+    "meaning": "Tổng hợp sự khác biệt về đơn vị định danh, mức chia sẻ App Server Instance, Database và khả năng tùy biến theo tổ chức.",
     "width": 1100,
-    "height": 850
+    "height": 880,
+    "after": 0
   },
   {
-    "stem": "hinh_1_4_truong_thanh",
-    "caption": "Hình 1.4 Tổ chức mã nguồn ứng dụng và dữ liệu qua bốn cấp độ trưởng thành",
-    "section": "1.4.6",
-    "meaning": "Phương án database và cấu hình được diễn giải theo phạm vi đối chiếu của đề tài; mở rộng ngang là hướng phát triển.",
+    "stem": "hinh_1_8_cap_do_1",
+    "caption": "Hình 1.8 Sơ đồ kiến trúc Cấp độ 1 – Ad Hoc / Custom",
+    "section": "1.4.1",
+    "meaning": "Mỗi khách hàng sử dụng một biến thể mã nguồn riêng cùng App Server Instance và Database độc lập.",
     "width": 1100,
-    "height": 1020
+    "height": 640,
+    "after": 0
   },
   {
-    "stem": "hinh_1_5_ba_tang",
-    "caption": "Hình 1.5 Quan hệ ba tầng trong cung ứng dịch vụ đa thuê bao",
+    "stem": "hinh_1_9_cap_do_2",
+    "caption": "Hình 1.9 Sơ đồ kiến trúc Cấp độ 2 – Configurable",
+    "section": "1.4.2",
+    "meaning": "Tất cả khách hàng dùng chung một Codebase chuẩn nhưng tùy biến bằng file cấu hình trước khi chạy trên các Instance và Database riêng.",
+    "width": 1100,
+    "height": 690,
+    "after": 0
+  },
+  {
+    "stem": "hinh_1_10_cap_do_3",
+    "caption": "Hình 1.10 Sơ đồ kiến trúc Cấp độ 3 – Configurable, Multi-Tenant-Efficient (Mục tiêu đề tài)",
+    "section": "1.4.3",
+    "meaning": "Một App Server Instance và một Database dùng chung phục vụ đồng thời nhiều thuê bao; tùy biến lúc chạy qua Metadata và cô lập logic bằng Tenant ID.",
+    "width": 1100,
+    "height": 710,
+    "after": 0
+  },
+  {
+    "stem": "hinh_1_11_cap_do_4",
+    "caption": "Hình 1.11 Sơ đồ kiến trúc Cấp độ 4 – Scalable, Configurable, Multi-Tenant-Efficient (Hướng phát triển)",
+    "section": "1.4.4",
+    "meaning": "Mở rộng kiến trúc Cấp độ 3 bằng bộ cân bằng tải, cụm nhiều App Server Instances/Pods co giãn ngang và cơ sở dữ liệu phân tán.",
+    "width": 1100,
+    "height": 720,
+    "after": 0
+  },
+  {
+    "stem": "hinh_1_12_truong_thanh",
+    "caption": "Hình 1.12 Sơ đồ so sánh tổng quát bốn cấp độ trưởng thành kiến trúc SaaS",
+    "section": "1.4.5",
+    "meaning": "Tổng hợp tiến trình từ Cấp độ 1 đến Cấp độ 4; đề tài định vị mục tiêu thực nghiệm ở Cấp độ 3 và đặt Cấp độ 4 làm hướng phát triển.",
+    "width": 1100,
+    "height": 1050,
+    "after": 0
+  },
+  {
+    "stem": "hinh_1_13_ba_tang",
+    "caption": "Hình 1.13 Quan hệ ba tầng trong cung ứng dịch vụ đa thuê bao",
+    "section": "1.5.1",
+    "meaning": "Ba tầng biểu diễn vai trò từ tổ chức thuê dịch vụ, phần mềm của nhà cung cấp đến các Web/App/DB Server Instance thực thi.",
+    "width": 1100,
+    "height": 660,
+    "after": 0
+  },
+  {
+    "stem": "hinh_1_14_tich_hop",
+    "caption": "Hình 1.14 Mô hình tổng thể ba tầng và các cơ chế kiểm soát xuyên tầng",
+    "section": "1.5.2",
+    "meaning": "Đường liền là quan hệ phục vụ, nét đứt là phạm vi kiểm soát xuyên tầng áp dụng trong kiến trúc Cấp độ 3.",
+    "width": 1100,
+    "height": 750,
+    "after": 0
+  },
+  {
+    "stem": "hinh_1_15_ngan_xep_goc",
+    "caption": "Hình 1.15 Ngăn xếp chín tầng nguyên bản của Kabbedijk và cộng sự (vẽ lại theo [3])",
     "section": "1.5.3",
-    "meaning": "Các tầng diễn tả vai trò cung ứng; không đồng nhất với ba lớp giao diện nghiệp vụ truy cập dữ liệu.",
-    "width": 1100,
-    "height": 660
+    "meaning": "So sánh phạm vi phân tích của ngăn xếp nguyên bản và bản cập nhật; không phải thang trưởng thành SaaS.",
+    "width": 1000,
+    "height": 720,
+    "after": 0
   },
   {
-    "stem": "hinh_1_6_tich_hop",
-    "caption": "Hình 1.6 Mô hình tổng thể và các cơ chế kiểm soát xuyên tầng",
-    "section": "1.5.5",
-    "meaning": "Đường liền là quan hệ phục vụ, nét đứt là phạm vi kiểm soát, không phải luồng request.",
-    "width": 1100,
-    "height": 750
+    "stem": "hinh_1_16_ngan_xep_cap_nhat",
+    "caption": "Hình 1.16 Ngăn xếp chín tầng cập nhật cho kiến trúc Cloud-Native do nhóm đề xuất",
+    "section": "1.5.3",
+    "meaning": "So sánh phạm vi phân tích của ngăn xếp nguyên bản và bản cập nhật; không phải thang trưởng thành SaaS.",
+    "width": 1000,
+    "height": 720,
+    "after": 1
   },
   {
     "stem": "hinh_2_1_silo",
-    "caption": "Hình 2.1 Tài nguyên ứng dụng và dữ liệu dành riêng theo tenant",
-    "section": "2.2.1",
-    "meaning": "Quan hệ mũi tên xác định App và dữ liệu phục vụ tenant; tên mô hình không tự bảo đảm mức cô lập vật lý.",
+    "caption": "Hình 2.1 Tài nguyên ứng dụng và dữ liệu dành riêng theo tenant (Mô hình Silo)",
+    "section": "2.1.2",
+    "meaning": "Quan hệ mũi tên xác định App Server Instance và nguồn dữ liệu phục vụ từng tenant.",
     "width": 1100,
-    "height": 600
+    "height": 600,
+    "after": 0
   },
   {
     "stem": "hinh_2_2_pool",
-    "caption": "Hình 2.2 Ứng dụng và bảng dữ liệu dùng chung có nhận biết tenant",
-    "section": "2.2.2",
-    "meaning": "Quan hệ mũi tên xác định App và dữ liệu phục vụ tenant; tên mô hình không tự bảo đảm mức cô lập vật lý.",
+    "caption": "Hình 2.2 Ứng dụng và bảng dữ liệu dùng chung có nhận biết tenant (Mô hình Pool)",
+    "section": "2.1.2",
+    "meaning": "Quan hệ mũi tên xác định App Server Instance và nguồn dữ liệu phục vụ từng tenant.",
     "width": 1100,
-    "height": 600
+    "height": 600,
+    "after": 1
   },
   {
     "stem": "hinh_2_3_bridge",
-    "caption": "Hình 2.3 Chia sẻ ứng dụng và phân tách nguồn dữ liệu",
-    "section": "2.2.3",
-    "meaning": "Quan hệ mũi tên xác định App và dữ liệu phục vụ tenant; tên mô hình không tự bảo đảm mức cô lập vật lý.",
+    "caption": "Hình 2.3 Chia sẻ ứng dụng và phân tách nguồn dữ liệu (Mô hình Bridge)",
+    "section": "2.1.3",
+    "meaning": "Quan hệ mũi tên xác định App Server Instance và nguồn dữ liệu phục vụ từng tenant.",
     "width": 1100,
-    "height": 600
+    "height": 600,
+    "after": 0
   },
   {
     "stem": "hinh_2_4_hybrid",
-    "caption": "Hình 2.4 Phối hợp tài nguyên dùng chung và dành riêng",
-    "section": "2.2.4",
-    "meaning": "Quan hệ mũi tên xác định App và dữ liệu phục vụ tenant; tên mô hình không tự bảo đảm mức cô lập vật lý.",
+    "caption": "Hình 2.4 Phối hợp tài nguyên dùng chung và dành riêng (Mô hình Hybrid)",
+    "section": "2.1.3",
+    "meaning": "Quan hệ mũi tên xác định App Server Instance và nguồn dữ liệu phục vụ từng tenant.",
     "width": 1100,
-    "height": 600
+    "height": 600,
+    "after": 1
   },
   {
     "stem": "hinh_3_1_use_case",
@@ -85,54 +185,61 @@
     "section": "3.1.2",
     "meaning": "Đường nối là quan hệ tham gia chức năng; quyền chi tiết được xác định trong ma trận phân quyền.",
     "width": 1100,
-    "height": 740
+    "height": 740,
+    "after": 0
   },
   {
     "stem": "hinh_3_2_kien_truc",
-    "caption": "Hình 3.2 Kiến trúc thành phần của ứng dụng được đề xuất",
-    "section": "3.2.2",
-    "meaning": "Các khối trong backend là mô-đun cùng một instance; sơ đồ không biểu diễn nhiều dịch vụ triển khai độc lập.",
+    "caption": "Hình 3.2 Kiến trúc thành phần của ứng dụng Cấp độ 3 được đề xuất",
+    "section": "3.2.1",
+    "meaning": "Các khối trong backend là mô-đun cùng một App Server Instance; phục vụ đồng thời nhiều tenant trên một Database chung.",
     "width": 1100,
-    "height": 800
+    "height": 800,
+    "after": 0
   },
   {
     "stem": "hinh_3_3_luong_yeu_cau",
     "caption": "Hình 3.3 Luồng tạo thẻ có xác lập và giải phóng ngữ cảnh tenant",
-    "section": "3.2.3",
+    "section": "3.2.1",
     "meaning": "Luồng hợp lệ; lỗi xác thực bị từ chối trước nghiệp vụ; mọi nhánh đều dọn ngữ cảnh.",
     "width": 1100,
-    "height": 850
+    "height": 850,
+    "after": 1
   },
   {
     "stem": "hinh_3_4_erd",
     "caption": "Hình 3.4 Lược đồ logic các thực thể dữ liệu cốt lõi",
-    "section": "3.3.1",
+    "section": "3.2.2",
     "meaning": "Một workspace tương ứng một tenant; FK nghiệp vụ có cùng tenant_id; ký hiệu 1:N biểu diễn lực lượng quan hệ.",
     "width": 1100,
-    "height": 1060
+    "height": 1060,
+    "after": 0
   },
   {
     "stem": "hinh_3_5_metadata",
     "caption": "Hình 3.5 Cập nhật và áp dụng metadata theo tenant khi ứng dụng đang chạy",
-    "section": "3.4.3",
-    "meaning": "Thay đổi cấu hình không thay thế phân quyền; backend vẫn kiểm tra quy tắc khi gọi API trực tiếp.",
+    "section": "3.3.2",
+    "meaning": "Thay đổi cấu hình có hiệu lực tại runtime trên cùng instance; backend vẫn kiểm tra quy tắc khi gọi API trực tiếp.",
     "width": 1100,
-    "height": 680
+    "height": 680,
+    "after": 0
   },
   {
     "stem": "hinh_3_6_giao_dien",
     "caption": "Hình 3.6 Thiết kế giao diện quản lý công việc theo workspace",
-    "section": "3.5.3",
+    "section": "3.4.2",
     "meaning": "Wireframe đề xuất; không được dùng như bằng chứng ứng dụng đã chạy hoặc đã vượt kiểm thử.",
     "width": 1100,
-    "height": 690
+    "height": 690,
+    "after": 1
   },
   {
     "stem": "hinh_3_7_trien_khai",
     "caption": "Hình 3.7 Mô hình triển khai ứng dụng phục vụ nhiều tenant trên máy chủ thử nghiệm",
-    "section": "3.6.1",
-    "meaning": "Chỉ backend được tính là instance ứng dụng nghiệp vụ; database không công khai trực tiếp ra Internet.",
+    "section": "3.5.1",
+    "meaning": "Phân biệt rõ Web Server Instance, Application Server Instance và Database Server Instance dùng chung.",
     "width": 1100,
-    "height": 760
+    "height": 760,
+    "after": 0
   }
 ]
